@@ -11,6 +11,4 @@ public class SpringCloudClientExampleApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCloudClientExampleApplication.class, args);
 	}
-	
-	
 }

@@ -1,8 +1,5 @@
 package com.spring.cloud.client.demo;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,9 +17,7 @@ public class SpringCloudClientExampleApplicationTests {
 	public void contextLoads() {
 		RestTemplate restTemplate = new RestTemplate();
 		
-		Map<String, Object> vars = new HashMap<>();
-
-		Assert.assertNotNull("", restTemplate.getForObject("http://localhost:8080/developer", User.class , vars));
+		Assert.assertNotNull("User exists", restTemplate.getForObject("http://localhost:8080/developer", User.class));
 	}
 
 }
